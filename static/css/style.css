@@ -1,0 +1,1521 @@
+
+:root {
+	--pm-c: #ff6600;
+	--bg-c: #f2f5f9;
+	--br-c:#f2f5f9
+}
+body,html {
+	background: var(--bg-c);
+}
+a,a:hover {
+	font-size: 14px;
+	transition: all .3s
+}
+.b-a {
+	border: 1px solid var(--br-c);
+}
+.b-b {
+	border-bottom: 1px solid var(--br-c);
+}
+.b-t {
+	border-top: 1px solid var(--br-c);
+}
+.b-l {
+	border-left: 1px solid var(--br-c);
+}
+.b-r {
+	border-right: 1px solid var(--br-c);
+}
+
+/*
+* 导航条效果
+*/
+#2zixun_com header {
+	transition: all .3s
+}
+#2zixun_com .top-active {
+	transform: translateY(-60px);
+}
+#2zixun_com .index {
+	padding-top: 20px;
+}
+
+.siteBg {
+	background: url('../images/site-bg.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+    backface-visibility: hidden;
+}
+main {
+    padding-bottom: 40px;
+}
+/*
+* 导航条
+*/
+.navBar {
+	position: relative;
+	z-index: 10;
+	box-shadow: 0px 5px 40px 0px rgba(17,58,93,.1);
+}
+.navBar .topNav {
+	height: 58px;
+}
+.navBar .topNav ul {
+	margin: 0;
+	padding: 0;	
+}
+.navBar .topNav ul li {
+	display: inline-block;
+	margin-left: 30px;
+}
+.navBar .topNav ul li a {
+	font-size: 15px;
+}
+.navBar .topNav ul li a:hover {
+	color: var(--pm-c);
+}
+.navBar .topNav .logo {
+	height: 38px;
+}
+.navBar .topNav .logo img {
+	height: 100%;
+}
+.navBar .nav {
+	height: 45px;
+}
+.navBar .nav>ul {
+	padding: 0;
+	position: relative;
+}
+.navBar .nav>ul>li {
+	display: inline-block;
+	margin-right: 40px;
+}
+.navBar .nav>ul>li>a {
+	color: #909399;
+	padding: 12px 0;
+	display: block;
+}
+.navBar .nav>ul>li>a:hover {
+	color: var(--pm-c);
+}
+.navBar .nav>ul .sub-menu {
+	display: none;
+	opacity: 0;
+	flex-wrap: wrap;
+	position: absolute;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	list-style: none;
+	padding: 15px;
+	border-radius: 4px;
+	border-top: 1px solid var(--br-c);
+}
+.navBar .nav>ul>li:hover .sub-menu {
+	display: flex;
+	opacity: 1;
+}
+.navBar .nav>ul .sub-menu li {
+	position: relative;
+	width: 10%;
+}
+.navBar .nav>ul .sub-menu li a {
+	color: #909399;
+	padding: 8px 15px;
+	display: flex;
+	border-right: 1px solid var(--br-c)
+}
+.navBar .nav>ul .sub-menu li a:hover {
+	color: var(--pm-c);
+}
+.navBar .nav>ul .sub-menu li:nth-child(10n) a {
+	border: 0;
+}
+/*
+* 搜索
+*/
+.search {
+	min-width: 220px;
+
+}
+.search form {
+	background: var(--bg-c);
+	height: 35px;
+	border-radius: 4px;
+}
+.search input {
+	height: 100%;
+	border: 0;
+	background: transparent;
+	text-indent: 15px;
+}
+.search input:focus {
+	outline: none;
+	border: 0;
+	background: transparent;
+}
+.search button {
+	outline: none;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+/*
+* 首页推荐
+*/
+.recom {
+	padding: 20px 0;
+	border-top: 4px solid var(--pm-c);
+}
+.recom .recomGame {}
+.recom .recomGame ul {
+	padding: 0;
+	margin: 0 8px;
+	list-style: none;
+	overflow: hidden;
+}
+.recom .recomGame ul li {
+	width: 8.3%;
+	float: left;
+}
+.recom .recomGame ul li .item {}
+.recom .recomGame ul li .item .icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 12px;
+	overflow: hidden;
+	padding: 0;
+}
+.recom .recomGame ul li a {
+	font-size: 14px;
+	padding: 0 10px;
+}
+.recom .recomGame ul li:hover a {
+	color: var(--pm-c);
+}
+.recom .recomCat {
+	background: #F7F8FC;
+	margin-bottom: 0!important;
+	margin: 20px;
+}
+.recom .recomCat ul {
+	padding: 0;
+	padding-bottom: 10px;
+	margin: 0;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #eaecef
+}
+.recom .recomCat ul:last-child {
+	margin-bottom: 0;
+	padding: 0;
+	border: 0!important;
+}
+.recom .recomCat ul:nth-child(2) strong {
+	color: #409EFF;
+}
+.recom .recomCat ul:nth-child(3) strong {
+	color: #80d80c;
+}
+.recom .recomCat ul .current-cat a {
+    color: var(--pm-c);
+    font-weight: bold;
+}
+.recom .recomCat ul li {
+	display: inline-block;
+	font-size: 15px;
+}
+.recom .recomCat ul li a {
+	margin-left: 20px;
+	font-size: 13px;
+}
+.recom .recomCat ul li a:hover {
+	color:var(--pm-c);
+}
+.recom .recomCat ul li strong {
+	color:var(--pm-c);
+}
+
+
+.slide {}
+.slide .uk-slideshow-items {
+	height: 235px!important;
+}
+.slide .uk-slideshow-nav {
+	margin: 0;
+	padding: 10px 0;
+}
+.slide .uk-slideshow-nav li {
+	display: inline-block;
+	padding-left: 0;
+}
+.slide .uk-slideshow-nav li a {
+	display: block;
+	margin: 0 2px;
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	background: #fff;
+	border: 0;
+}
+.slide .uk-slideshow-nav {
+	height: auto;
+}
+.slide .uk-slideshow-nav .uk-active {}
+.slide .uk-slideshow-nav .uk-active a {
+	border-radius: 20px;
+	width: 20px;
+	background: var(--pm-c);
+	transition: all .3s;
+}
+.slide .thumb {
+	margin-left: -10px;
+}
+.slide .thumb>div {
+	padding-left: 10px;
+}
+.slide .thumb a {
+	height: 126px;
+}
+.slide .thumb .cover {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, transparent 100%);
+}
+.slide .thumb .cover p {
+	margin: 10px;
+	color: #fff;
+}
+
+/*
+* 首页标题
+*/
+.home-title {}
+.home-title span {
+	font-size: 15px;
+	display: inline-block;
+	padding-bottom: 15px;
+	color: var(--pm-c);
+	border-bottom: 2px solid var(--pm-c);
+}
+.home-title .moer {}
+
+/*
+* 首页热门资讯
+*/
+.hotNews {}
+.hotNews h3 {
+	padding: 10px;
+	margin: 15px 0;
+}
+.hotNews h3>a {
+	font-size: 15px;
+	color: #303133;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+.hotNews h3>a:hover {
+	color: var(--pm-c);
+}
+.hotNews h3>p {
+	margin: 0;
+	font-size: 13px;
+	letter-spacing: .5px;
+	overflow:hidden; 
+}
+.hotNews ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.hotNews ul li {
+	margin-bottom: 12px;
+}
+.hotNews ul li:last-child {
+	margin-bottom: 0;
+}
+.hotNews ul li:hover a {
+	color: var(--pm-c);
+}
+.hotNews ul li  span {
+	margin-right: 1px;
+}
+
+/*
+* 首页热门手游
+*/
+.hotGame {}
+.hotGame .icon {
+	width: 52px;
+	height: 52px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.hotGame .down {
+	margin-top: 6px;
+	border-radius: 4px;
+	font-size: 11px;
+	padding: 4px 10px;
+	color: #fff;
+	background-image: linear-gradient(-40deg, var(--pm-c), #ffa365);
+}
+
+/*
+* 首页手游switcher列表
+*/
+.game {}
+.game .switcher {}
+.switcher .uk-subnav {
+	margin-left: 0;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.switcher .uk-subnav li {
+	padding: 0;
+	margin-right: 20px;
+}
+.switcher .uk-subnav span {
+	cursor: pointer;
+	font-size: 12px;
+	border: 1px solid var(--br-c);
+	padding: 3px 8px;
+	border-radius: 20px;
+}
+.switcher .uk-subnav .uk-active span {
+	color: var(--pm-c);
+	border: 1px solid var(--pm-c);
+}
+.game .switcher .uk-switcher {
+	margin: 0;
+}
+.game .switcher .uk-switcher ul {
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+	margin: 0 -15px;
+}
+.game .switcher .uk-switcher ul li {
+	width: 12.5%;
+	float: left;
+	margin-top: 20px;
+}
+.game .switcher .uk-switcher ul li:hover a {
+	color: var(--pm-c);
+}
+.game .switcher .uk-switcher ul li .item {}
+.game .switcher .uk-switcher ul li .item .icon {
+	width: 68px;
+	height: 68px;
+	border-radius: 12px;
+	overflow: hidden;
+}
+.game .switcher .uk-switcher ul li .item .title {
+	padding: 0 15px;
+}
+/*
+* 首页手游热门手游
+*/
+.game .hotGame {}
+.game .hotGame .cover {}
+.game .hotGame .cover .bg {
+	height: 58px;
+	overflow: hidden;
+}
+.game .hotGame .cover .bg  img {
+	filter: blur(5px);  
+}
+.game .hotGame .cover .item {
+	padding: 30px 0 20px 0;
+}
+.game .hotGame .cover .item .info {
+	font-size: 13px;
+	margin-bottom: 8px;
+}
+.game .hotGame .cover .item .info  a {
+	font-size: 15px;
+	color: #303133;
+}
+.game .hotGame .cover .item .info a:hover {
+	color: var(--pm-c);
+}
+.game .hotGame .cover .item .info span {
+	padding: 2px 4px;
+	border-radius: 4px;
+	background: var(--pm-c);
+	color: #fff!important;
+	font-size: 12px;
+}
+.game .hotGame .cover .item .icon {
+	width: 60px;
+	height: 60px;
+	margin: 0 10px 0 15px;
+	border-radius: 12px;
+	overflow: hidden;
+	border: 3px solid rgba(255, 255, 255, 0.5)
+}
+.game .hotGame .cover .item .desc {
+	margin: 20px 20px 0;
+	line-height: 22px;
+}
+.game .hotGame ul {
+	margin: 15px 0;
+	margin-bottom: 0;
+}
+.game .hotGame ul li {
+	margin-bottom: 12px;
+}
+.game .hotGame ul li:last-child {
+	margin-bottom: 0;
+}
+.game .hotGame ul li a {}
+.game .hotGame ul li a:hover {
+	color: var(--pm-c);
+}
+.game .hotGame ul li span {
+	margin-right: 5px;
+}
+.game .hotGame ul li b {
+	margin-right: 2px;
+}
+
+
+/*
+* 首页手游攻略
+*/
+.gameGl {}
+.gameGl .gameGl-list {
+	margin-top: 15px;
+}
+.gameGl .gameGl-list .thumb {
+	width: 120px;
+	height: 77px;
+}
+.gameGl .gameGl-list a {
+	font-size: 15px;
+}
+.gameGl .gameGl-list a:hover {
+	color: var(--pm-c);
+}
+.gameGl .gameGl-list .desc {
+	margin: 5px 0;
+}
+.gameGl .gameGl-list span {
+	color: #C0C4CC;
+}
+/*
+* 首页手游测评
+*/
+.gameCp {}
+.gameCp .uk-slideshow-items {
+	min-height: 185px!important;
+}
+.gameCp .uk-slideshow i {
+	cursor: pointer;
+	color: #fff;
+	font-size: 30px;
+}
+.gameCp .thumb {
+	height: 185px;
+}
+.gameCp .thumb .cover {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, transparent 100%);
+}
+.gameCp .thumb .cover p {
+	color: #fff;
+	margin: 10px;
+}
+.gameCp .gameCp-list {
+	margin: 15px 0 0;
+	padding-left: 0;
+	list-style: none;
+}
+.gameCp .gameCp-list li {
+	margin-bottom: 13px;
+	padding-left: 15px;
+	position: relative;
+}
+.gameCp .gameCp-list li:last-child {
+	margin-bottom: 0;
+}
+.gameCp .gameCp-list li:hover a {
+	color: var(--pm-c);
+}
+.gameCp .gameCp-list li:before {
+	content: '';
+	position: absolute;
+	top: 9px;
+	left: -3px;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: #fff;
+	border: 1px solid var(--bg-c);
+	transition: all .3s;
+}
+.gameCp .gameCp-list li:hover:before {
+	background: var(--pm-c);
+	border: 1px solid var(--pm-c);
+}
+
+/*
+* 首页游戏视频
+*/
+.gameVideo {}
+.gameVideo .item {}
+.gameVideo .item .thumb {
+	height: 150px;
+	transition: all .3s;
+	background: #000;
+}
+.gameVideo .item .thumb img {
+	opacity: .8;
+}
+.gameVideo .item i {
+	color: #fff;
+	font-size: 32px;
+	display: inline-block;
+	transition: all .3s;
+}
+.gameVideo .item:hover i {
+	transform: scale(1.5);
+	opacity: 0;
+}
+.gameVideo .item:hover a {
+	color: var(--pm-c);
+}
+
+
+/*
+* 首页游戏图集
+*/
+.gameImages {}
+.gameImages .item {}
+.gameImages .item .thumb {
+	height: 165px;
+	transition: all .3s;
+	background: #000;
+}
+.gameImages .item .thumb img {
+    transition: all .3s;
+}
+.gameImages .item:hover img {
+    opacity: .6;
+}
+/*
+* 首页排行榜
+*/
+.rank {}
+.rank ul {
+	padding: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+.rank ul li {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid var(--br-c);
+}
+.rank ul li:last-child {
+	margin-bottom: 0;
+	padding: 0;
+	border: 0;
+}
+
+.rank .active .list {
+	display: none!important;
+}
+.rank .active .card {
+	display: flex;
+} 
+.rank .card {
+	display: none;
+}
+.rank .card .icon {
+	width: 60px;
+	height: 60px;
+	border-radius: 12px;
+	overflow: hidden;
+}
+.rank .card .info {}
+.rank .card .info a {
+	font-size: 15px;
+	color: #303133;
+	margin-bottom: 5px;
+}
+.rank .card .down {}
+.rank .card .down a {
+	padding: 5px 6px;
+	border-radius: 4px;
+	border:1px solid var(--pm-c);
+	color: var(--pm-c);
+}
+.rank .card .down a:hover {
+	background: var(--pm-c);
+	color: #fff;
+}
+.rank .list {}
+.rank .list b {
+	font-weight: normal;
+}
+.rank .num {
+	font-size: 12px;
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: #eee;
+	color: #909399;
+	border-radius: 4px;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+.rank ul li:nth-child(1) .num {
+	background: #ff5a00;
+	color: #fff;
+}
+.rank ul li:nth-child(2) .num {
+	background: #ff5a00;
+	color: #fff;
+}
+.rank ul li:nth-child(3) .num {
+	background: #ffcb2e;
+	color: #fff;
+}
+
+/*
+* 面包屑
+*/
+.crumb {
+	color: #909399;
+}
+.crumb a {
+	color: #303133;
+}
+/*
+* 列表页
+*/
+.category {}
+.category .catHead {
+	padding: 30px 0;
+}
+
+/*
+* 资讯列表页
+*/
+.category .articleNews {}
+.category .articleNews article {}
+.category .articleNews .menu {
+	height: 55px;
+}
+.category .articleNews .menu .bg img {
+	opacity: .5;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-ms-filter: blur(5px);
+	-o-filter: blur(5px);
+	filter: blur(5px);  
+}
+.category .articleNews .menu ul {
+	padding: 0 15px;
+}
+.category .articleNews .menu ul li {
+	display: inline-block;
+	margin-right: 15px;
+}
+.category .articleNews .menu ul li a {
+	font-size: 15px;
+	display: block;
+	padding: 15px 0;
+	color: color: rgb(0, 0, 0);
+	border-bottom: 3px solid transparent;
+}
+
+.category .articleNews .menu ul .current-cat a {
+    color: var(--pm-c);
+    font-weight: bold;
+}
+.category .articleNews .menu ul li a:hover {
+	color: #fa6501;
+	font-weight: bold;
+	border-bottom: 3px solid #fff;
+}
+.category .articleNews .menu .active a {
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 3px solid #fff
+}
+.category .articleNews article .thumb {
+	height: 148px;
+	width: 200px;
+}
+.category .articleNews article .title {
+	font-size: 16px;
+	color: #303133;
+}
+/*
+* 手戏列表页
+*/
+.category .articleGame {}
+.category .articleGame ul {
+	padding: 0;
+	list-style: none;
+}
+.category .articleGame ul li {
+	width: 16.6666%;
+	float: left;
+}
+.category .articleGame .item {}
+.category .articleGame .item .icon {
+	width: 86px;
+	height: 86px;
+	margin: 10px auto;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.category .articleGame .item .title {
+	font-size: 16px;
+}
+.category .articleGame .item .info {
+	margin: 5px 0;
+}
+.category .articleGame .item .info span {
+	display: inline-block;
+	position: relative;
+	padding-right: 14px;
+	margin-right: 8px;
+}
+.category .articleGame .item .info span:last-child {
+	padding: 0;
+	margin: 0;
+}
+.category .articleGame .item .info span:last-child:after {
+	display: none;
+}
+.category .articleGame .item .info span:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 1px;
+	height: 12px;
+	background: #ccc;
+}
+.category .articleGame .item .down {
+	border-radius: 4px;
+	margin: 10px 0;
+	border: 1px solid #eee;
+	padding: 5px 10px;
+	color: #909399;
+}
+.category .articleGame .item:hover .down{
+	background: var(--pm-c);
+	border: 1px solid var(--pm-c);
+	color: #fff;
+}
+
+/*
+* 分页 
+*/
+.fenye {}
+.prev, .next {}
+.fenye .page-numbers {
+	background: #fff;
+	display: inline-block;
+	padding: 7px 15px;
+	border-radius: 4px;
+	margin-right: 6px;
+	color: #666;
+	border: 1px solid var(--br-c)
+}
+
+.fenye .current {
+	background-color: var(--pm-c);
+	color: #fff;
+	border:none;
+	transition: all .3s
+}
+.fenye .current:hover {
+	border: none!important;
+}
+.fenye .page-numbers:hover {
+	background-color: var(--pm-c);
+	color: #fff;
+}
+/*
+* 侧边栏
+*/
+.sidebar {
+	width: 360px;
+}
+/*
+* 文章页
+*/
+.single
+.single .singleGame {}
+.single .singleGame .singleHead {}
+.single .singleGame .singleHead .icon {
+	background: #333;
+	width: 180px;
+	height: 180px;
+	border-radius: 4px;
+	background-size: 100%;
+	margin: 0 auto;
+}
+.single .singleGame .singleHead .icon .bg {
+	opacity: .3;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-ms-filter: blur(10px);
+	-o-filter: blur(10px);
+	filter: blur(10px);
+	width: 200%!important;
+	height: 200%!important;
+}
+.single .singleGame .singleHead .icon i {
+	border-radius: 20px;
+	width: 80px;
+	height: 80px;
+	border: 4px solid rgba(255, 255, 255, 0.4);
+	transition: all .3s;
+}
+.single .singleGame .singleHead .icon:hover i {
+	border: 4px solid rgba(255, 255, 255, 0.8);
+}
+.single .singleGame .singleHead h1 {
+	font-size: 24px;
+}
+.single .singleGame .singleHead .data {
+	padding: 20px;
+	padding-bottom: 0;
+	list-style: none;
+	background: #F7F8FC;
+}
+.single .singleGame .singleHead .data li {
+	font-size: 13px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.single .singleGame .singleHead .down {}
+.single .singleGame .singleHead .down a {
+	display: inline-block;
+	padding: 8px 28px;
+	border-radius: 4px;
+	font-size: 15px;
+	background: var(--pm-c);
+	background-image: linear-gradient(-40deg, var(--pm-c), #ffa365);
+}
+.single .singleGame .singleHead .down .starGame a {
+	background: #409EFF;
+	background-image: linear-gradient(-40deg, #409EFF, #99cbff);
+}
+.single .singleGame .singleHead .down-gray {
+    filter: grayscale(100%);
+    filter: gray;
+}
+.single .singleGame .singleHead .down a i {
+	font-size: 18px;
+	display: inline-block;
+	margin-right: 5px;
+	transform: translateY(1px);
+}
+.single .singleGame .singleHead .down a:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 5px -2px #d3d3d3;
+}
+
+.single .singleContent {
+    padding: 25px;
+}
+.single .singleContent .home-title span {
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.single .singleContent p {
+	text-indent: 2em;
+	font-size: 15px;
+	line-height: 26px;
+}
+.single .singleContent p img {
+	display: block;
+}
+.single .singleContent p>a {
+	color: var(--pm-c);
+}
+.single .singleContent h2 {
+	font-size: 18px;
+}
+.single .singleContent h2::before {
+	content: '#';
+	margin-right: 10px;
+	color: var(--pm-c);
+}
+.single .single-cop {
+    font-size: 13px;
+}
+.single .single-cop>div {
+    margin-bottom: 8px;
+}
+.single .single-cop>div:last-child {
+    margin-bottom: 0;
+}
+.single .single-tags {
+    padding-top: 25px;
+}
+.single .single-tags a {
+    background: var(--bg-c);
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+.single .single-tags a:hover {
+    background: var(--pm-c);
+    color: #fff;
+}
+.singleNews {}
+.singleNews h1 {
+	font-size: 22px;
+}
+.singleNews .singleContent {
+	padding: 25px;
+}
+.singleNews .singleContent p img {
+	display: block;
+	margin: 0 auto;
+	max-width: 600px
+}
+.pageSearch {}
+.pageSearch h3 {
+	font-size: 16px;
+}
+.pageRank {}
+.pageRank .rankBg {
+	width: 100%;
+	height: 260px;
+	background: #ffbd13;
+}
+.pageRank .rankMain {
+	transform: translateY(-60px);
+}
+.pageRank .rankMain>div {
+	border-radius: 4px;
+}
+.pageRank .rankMenu {}
+.pageRank .rankMenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.pageRank .rankMenu ul li {
+	float: left;
+	width: 25%;
+	height: 70px;
+	position: relative;
+}
+.pageRank .rankMenu ul li a {
+	display: block;
+	width: 100%;
+	color: #6a6a6a;
+	font-size: 16px;
+	line-height: 70px;
+	height: 70px;
+	overflow: hidden;
+	text-align: center;
+	background: #f8f8f8;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #909399;
+}
+.pageRank .rankMenu ul li a:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	border-right: 1px solid #e8e8e8;
+	height: 20px;
+	margin-top: -10px;
+	right: 0;
+}
+.pageRank .rankMenu ul .current-menu-item {}
+.pageRank .rankMenu ul .current-menu-item a {
+	background: #fff;
+	height: 80px;
+	line-height: 80px;
+	-webkit-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+	color: var(--pm-c);
+}
+.pageRank .rankMenu ul .current-menu-item a:after {
+	display: none;
+}
+.pageRank .rankMain {}
+.pageRank .rankMain .item {
+	padding: 30px;
+	border-bottom: 1px dashed #f6f6f6;
+	transition: all .3s;
+}
+.pageRank .rankMain .item:hover {
+	background: var(--bg-c);
+}
+.pageRank .rankMain .item .icon {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.pageRank .rankMain .item .icon img {
+	width: 100%;
+	height: 100;
+}
+.pageRank .rankMain .item .thumb {
+	width: 120px;
+	height: 90px;
+}
+.pageRank .rankMain .item .num {
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+	padding-top: 8px;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+}
+
+.pageRank .rankMain .item:nth-child(1) .num {
+	background-image: url('../images/icon-rank-1.png');
+	background-color: transparent;
+}
+.pageRank .rankMain .item:nth-child(1) .num span {
+	background-color: transparent;
+	color: #fff;
+}
+.pageRank .rankMain .item:nth-child(2) .num {
+	background-image: url('../images/icon-rank-2.png');
+	background-color: transparent;
+}
+.pageRank .rankMain .item:nth-child(2) .num span {
+	background-color: transparent;
+	color: #fff;
+}
+.pageRank .rankMain .item:nth-child(3) .num {
+	background-image: url('../images/icon-rank-3.png');
+}
+.pageRank .rankMain .item:nth-child(3) .num span {
+	background-color: transparent;
+	color: #fff;
+}
+.pageRank .rankMain .item .num span {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-color: #eee;
+	border-radius: 50%;
+	color: #999;
+}
+.pageRank .rankMain .item .title {
+	font-size: 17px;
+}
+.pageRank .rankMain .item .data {
+	min-width: 155px;
+}
+.pageRank .rankMain .item .data a {
+	color: #909399;
+}
+.pageRank .rankMain .item .data .hr {
+	display: inline-block;
+	width: 1px;
+	height: 10px;
+	background: #ccc;
+	margin: 0 5px;
+}
+.pageRank .rankMain .item .down {
+	background: var(--pm-c);
+	color: #fff;
+	display: inline-block;
+	padding: 8px 28px;
+	border-radius: 4px;
+	font-size: 15px;
+	background: var(--pm-c);
+	background-image: linear-gradient(-40deg, var(--pm-c), #ffa365);
+}
+.pageRank .rankMain .item .down i {
+	display: inline-block;
+	margin-right: 5px;
+	transform: translateY(2px);
+}
+.pageRank .rankMain .item .down:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 5px 5px -2px #d3d3d3;
+}
+
+/*
+* ------------------------------------------------------------------------------
+* 单页合集样式
+* ------------------------------------------------------------------------------
+*/
+.page-about {}
+.page-menu {}
+.page-menu ul {}
+.page-menu ul li {
+	padding: 20px 0;
+	margin: 0!important;
+	border-bottom: 1px solid var(--br-c);
+	text-indent: 20px
+}
+.page-menu ul li:last-child {
+	border: none
+}
+.page-menu ul li a {
+	display: block;
+	color: #888;
+	font-size: 15px;
+}
+.page-menu .current-menu-item {
+	background: #fafafa;
+}
+.page-menu .current-menu-item a {
+	position: relative;
+	font-weight: bold;
+	color: var(--pm-c)!important
+}
+.page-menu .current-menu-item a::after {
+	content: '';
+	position: absolute;
+	width: 5px;
+	height: 100%;
+	background: var(--pm-c);
+	left: 0;
+	box-shadow: 3px 0px 10px -1px var(--pm-c);
+	border-radius: 2px;
+}
+
+.page-main {}
+.page-main p {
+	text-indent: 2em;
+	font-size: 15px;
+	line-height: 26px;
+}
+/*
+* ------------------------------------------------------------------------------
+* 标签大全
+* ------------------------------------------------------------------------------
+*/
+.page-tags {}
+.page-tags .tags-main {}
+.page-tags .tags-main ul {
+	padding: 0;
+	margin: 15px;
+	list-style: none;
+	border-left: 1px solid var(--br-c);
+}
+.page-tags .tags-main ul li {
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+.site-main {
+	margin-top: 0!important;
+}
+.site-content {
+	padding-bottom: 0!important;
+}
+.page-404 {
+	padding: 5% 0;
+}
+.page-404 .page-content {
+	flex: 1;
+	margin-top: 70px
+}
+.page-404 .page-content h2 {
+	font-size: 45px;
+	font-weight: bold;
+}
+.page-404 .page-content p {
+	text-align: left;
+	color: #888;
+	font-size: 16px;
+	line-height: 1.875;
+}
+.page-404 .page-content .go-home {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 15px;
+	letter-spacing: .5px;
+	background-color: var(--pm-c);
+	background-image: linear-gradient(-40deg, var(--pm-c), #ffa365);
+	-webkit-box-shadow: 0 5px 10px 0 rgba(255, 102, 0, 0.25);
+	box-shadow: 0 5px 10px 0 rgba(255, 102, 0, 0.25);
+	color: #fff!important;
+	border-radius: 4px;
+}
+.page-404 .page-content .go-home i {
+	margin-left: 10px;
+}
+.page-404 .page-content h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 80px;
+}
+.page-404 .page-content ul {
+	margin: 20px 0;
+	padding-left: 0;
+	list-style: none
+}
+.page-404 .page-content ul li {
+	color: #909399;
+	margin-bottom: 10px;
+}
+.page-404 .page-content ul li a {
+	color: #606266;
+	font-size: 14px;
+}
+/*
+* 专题页面
+*/
+.special
+.special-bg {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.special-main {
+    transform: translateY(-60px);
+}
+#no-down .go-home {
+    text-align: center;
+}
+#no-down .go-home a {
+    background: var(--pm-c);
+    background-image: linear-gradient(-40deg, var(--pm-c), #ffa365);
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+/*
+* 网站底部
+*/
+.footer {}
+.footer .footWidget {}
+.footer .footWidget h3 {
+	font-size: 15px;
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	font-family: arial;
+}
+.footer .footWidget h3 span {
+	color: #303133;
+}
+.footer .footWidget ul {
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+.footer .footWidget ul li {
+	margin-bottom: 10px;
+}
+.footer .foot-logo {
+	height: 50px;
+}
+.footer .foot-logo img {
+	height: 100%;
+}
+.link {
+	border: 1px dashed var(--br-c)
+}
+.link ul {
+	list-style: none;
+}
+.link ul li {
+	display: inline-block;
+}
+.link a {
+	color: #909399;
+	margin-right: 15px;
+}
+.link a:hover {
+	color: #303133;
+}
+.footer .footCop {
+	font-size: 13px;
+	background: #F7F8FC;
+	font-family: arial;
+}
+@media (max-width: 767px){
+	.navBar .topNav .logo {
+		flex: 1;
+	}
+	.navBar .nav>ul {
+		padding: 0 15px;
+		white-space: nowrap;
+		overflow-x: scroll;
+	}
+	.search {
+		min-width: 160px;
+	}
+	.recom .recomGame ul {
+		overflow: hidden;
+		display: block;
+		white-space: nowrap;
+		overflow-x: scroll;
+		margin: 0px 15px;
+	}
+	.recom .recomGame ul li {
+		width: 55px;
+		float: none;
+		display: inline-block;
+	}
+	.recom .recomGame ul li .item .icon {
+		width: 50px;
+		height: 50px;
+	}
+	.game .switcher ul {
+		overflow-x: scroll;
+		white-space: nowrap;
+		display: block;
+	}
+	.switcher .uk-subnav li {
+		display: inline-block;
+	}
+	.game .switcher .uk-switcher ul {}
+	.game .switcher .uk-switcher ul li {
+		width: 25%;
+	}
+	.pageRank .rankBg {
+		height: 160px;
+		position: relative;
+	}
+	.pageRank .rankBg img {
+		max-width: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.pageRank .rankMenu ul li {
+		height: 50px;
+	}
+	.pageRank .rankMenu ul li a {
+		height: 50px;
+		line-height: 50px;
+		font-size: 14px;
+	}
+	.pageRank .rankMenu ul .current-menu-item a {
+		height: 60px;
+		line-height: 60px;
+	}
+	.pageRank .rankMain .item {
+		padding: 15px;
+	}
+	.pageRank .rankMain .item .content {
+		display: block;
+	}
+	.pageRank .rankMain .item .content a {
+		font-size: 14px;
+	}
+	.pageRank .rankMain .item .num {
+		margin-right: 12px!important;
+	}
+	.pageRank .rankMain .item .icon {
+		width: 68px;
+		height: 68px;
+		margin-right: 10px;
+	}
+	.pageRank .rankMain .item .data {
+		min-width: auto;
+		margin: 5px 0!important;
+		font-size: 13px;
+	}
+	.pageRank .rankMain .item .count {
+		margin: 0!important;
+		font-size: 13px;
+	}
+	.pageRank .rankMain .item .down {
+		padding: 6px 8px;
+		border-radius: 4px;
+		font-size: 12px;
+		margin: 0!important;
+	}
+	.category .catHead {
+	    padding: 0;
+	}
+	.category .articleGame .item .info span {
+	    padding-right: 6px;
+	    padding-right: 8px;
+        margin-right: 4px;
+	}
+	.category .articleGame .item .info span:after {
+        height: 10px;
+    }
+    .category .articleNews article .thumb {
+        width: 100%;
+    }
+	.pageRank .rankMain .item .down i {
+		display: none;
+	}
+	.category .articleGame ul li {
+	    width: 50%;
+	}
+	.category .articleGame .item .info {
+	    font-size: 12px;
+	}
+	.single .singleGame .singleHead .icon {
+	    width: 100%;
+	}
+	.single .singleGame .singleHead .down {
+	    display: flex;
+	}
+	.single .singleGame .singleHead .down>div {
+	    margin: 0!important;
+	    width: 50%;
+	    text-align: center;
+	}
+	.singleNews .singleContent p img {
+	    max-width: 100%
+	}
+	.error-404 {
+		display: block;
+		position: relative;
+	}
+	.page-404 .page-content h2 {
+		font-size: 24px;
+	}
+	.page-404 .page-content p {
+		padding: 20px 0;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.page-404 .page-content h3 {
+		margin-top: 15px;
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	.page-404 .page-content .go-home {
+		padding: 8px 20px 8px 15px
+	}
+	.footer {
+		padding: 30px 0;
+	}
+.m-mianleft {}
+.m-mianleft h1{ line-height: 40px; font-size: 24px; margin: 20px 0 10px 0  }
+
+.m-txtinfo { color: #aaa;  font-size: 14px;height: 22px; line-height: 22px; margin-bottom: 8px  }
+.m-txtinfo p { margin-right: 30px; }
+.m-txtinfo p i {font-style:normal;}
+	
+}
+
+/**/
+
+.m-tags a { color: #f60; border:1px #f60 solid; display: inline-block; padding: 2px 8px; margin-right: 10px; border-radius: 3px }
+.m-tags a:hover {background-color: #f60; color: #fff}
