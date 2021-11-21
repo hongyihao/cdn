@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="applicable-device" content="pc">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>抱歉,您访问的页面走丢了_手游猫</title>
+		<meta name="keywords" content="安卓游戏下载,安卓软件下载,安卓游戏排行榜,手游攻略,手游猫" />
+		<meta name="description" content="手游猫(www.symao.com)为广大游戏爱好者提供最新最全的安卓手机游戏下载、安卓软件下载、安卓手游排行榜，并即时更新原创的手机游戏攻略及评测，找安卓游戏就到手游猫！" />
+        <link rel='stylesheet' id='uikit-css'  href='https://www.symao.com/wp-content/themes/mao/static/css/uikit.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://www.symao.com/wp-content/themes/mao/style.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='iconfont-css'  href='https://www.symao.com/wp-content/themes/mao/static/css/iconfont.css?ver=5.5.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.symao.com/wp-content/themes/mao/static/js/jquery.min.js?ver=5.5.3' id='jquery-js'></script>
+<script type='text/javascript' src='https://www.symao.com/wp-content/themes/mao/static/js/uikit.min.js?ver=5.5.3' id='uikit-js'></script>
+	</head>
+	<body>
+		<div id="symao_com">
+			<header class="header uk-background-default" uk-sticky>
+				<div class="navBar">
+					<div class="topNav  uk-container uk-flex uk-flex-middle">
+						<a class="logo uk-display-block" href="https://www.symao.com" target="_blank">
+							<img src="/wp-content/themes/mao/static/images/logo.png" alt="手游猫"/>
+						</a>
+						<ul class="uk-flex-1 uk-visible@s">
+						    							<li><a href="/games/" target="_blank">热门手游</a>
+														<li><a href="/app/" target="_blank">热门应用</a>
+														<li><a href="/rankhotgame/" target="_blank">手游排行榜</a>
+													</ul>
+						<div class="search">
+                            <form action="https://www.symao.com" method="get" class="uk-position-relative uk-flex">
+                                <input type="text" value="" name="s" id="s" placeholder="搜你喜欢" />
+                                <button class="uk-position-center-right"><i class="iconfont icon-sousuo"></i></button>
+                            </form>
+						</div>
+					</div>
+					<div class="nav b-t">
+						<ul class="uk-container">
+							<li><a href="/">首页</a></li>
+<li><a href="https://www.symao.com/news">手游攻略</a>
+<ul class="sub-menu">
+	<li><a href="https://www.symao.com/news/xydt">新游动态</a></li>
+	<li><a href="https://www.symao.com/news/sypc">手游评测</a></li>
+	<li><a href="https://www.symao.com/news/sygl">手游攻略</a></li>
+</ul>
+</li>
+<li><a href="https://www.symao.com/games">手游下载</a>
+<ul class="sub-menu">
+	<li><a href="https://www.symao.com/games/fxsj">飞行射击</a></li>
+	<li><a href="https://www.symao.com/games/yyyx">音乐游戏</a></li>
+	<li><a href="https://www.symao.com/games/scjs">赛车竞速</a></li>
+	<li><a href="https://www.symao.com/games/jsby">角色扮演</a></li>
+	<li><a href="https://www.symao.com/games/tfcl">策略塔防</a></li>
+	<li><a href="https://www.symao.com/games/mnjy">模拟经营</a></li>
+	<li><a href="https://www.symao.com/games/qpkp">棋牌卡牌</a></li>
+	<li><a href="https://www.symao.com/games/dzgd">动作格斗</a></li>
+	<li><a href="https://www.symao.com/games/mxjm">冒险解谜</a></li>
+	<li><a href="https://www.symao.com/games/tyjj">体育竞技</a></li>
+	<li><a href="https://www.symao.com/games/xxyz">休闲益智</a></li>
+	<li><a href="https://www.symao.com/games/scy">二次元养成</a></li>
+</ul>
+</li>
+<li><a href="https://www.symao.com/app">应用软件</a>
+<ul class="sub-menu">
+	<li><a href="https://www.symao.com/app/yybf">影音播放</a></li>
+	<li><a href="https://www.symao.com/app/symh">摄影美化</a></li>
+	<li><a href="https://www.symao.com/app/xwyd">新闻阅读</a></li>
+	<li><a href="https://www.symao.com/app/dtdh">地图导航</a></li>
+	<li><a href="https://www.symao.com/app/shfw">生活服务</a></li>
+	<li><a href="https://www.symao.com/app/gwzf">购物支付</a></li>
+	<li><a href="https://www.symao.com/app/bgxx">办公学习</a></li>
+	<li><a href="https://www.symao.com/app/sjlt">社交聊天</a></li>
+	<li><a href="https://www.symao.com/app/zmzt">主题桌面</a></li>
+	<li><a href="https://www.symao.com/app/xtaq">系统安全</a></li>
+	<li><a href="https://www.symao.com/app/jrlc">金融理财</a></li>
+</ul>
+</li>
+<li><a href="https://www.symao.com/app/mnq">手游模拟器</a></li>
+<li><a href="https://www.symao.com/images">游戏图库</a>
+<ul class="sub-menu">
+	<li><a href="https://www.symao.com/images/sybz">手游壁纸</a></li>
+	<li><a href="https://www.symao.com/images/syjt">手游截图</a></li>
+</ul>
+</li>
+<li><a href="/special">手游专题</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+<main id="main" class="uk-container">
+	<div class="error-404 page-404 uk-flex">
+		<div class="page-content">
+			<h2>您访问的页面不存在</h2>
+			<p>暂时没有搜寻到您需要的内容，我们会在今后努力补充完整。<br> 感谢对 手游猫 的关注支持</p>
+			<a class="go-home" href="/">返回首页<i class="iconfont icon-arrow-right"></i></a>
+			<h3>这些热门频道或许您感兴趣</h3>
+			<ul>
+				<li>1. <a href="/games/" target="_blank">热门手机游戏下载</a></li>
+				<li>2. <a href="/app/" target="_blank">热门应用软件下载</a></li>
+				<li>3. <a href="/app/mnq/" target="_blank">手游模拟器下载</a></li>
+				<li>4. <a href="/news/sygl/" target="_blank">最新手游攻略</a></li>
+				<li>5. <a href="/rankhotgame/" target="_blank">热门手游排行榜</a></li>
+			</ul>
+		</div>
+		<div class="page-img">
+			<img src="https://img.symao.com/wp-content/themes/mao/static/images/404-bg.gif" alt="手游猫">
+		</div>
+	</div>
+</main>
+            <footer class="footer uk-background-default uk-padding">
+				<div class="uk-container">
+					<div class="footWidget uk-grid-small" uk-grid>
+						<div class="uk-width-1-4 uk-visible@s">
+							<h3 class="b-b">
+								<span>手游猫</span>
+							</h3>
+							<div>
+								<a class="foot-logo uk-display-block" href="https://www.symao.com" target="_blank">
+									<img src="/wp-content/themes/mao/static/images/logo.png" alt="手游猫"/>
+								</a>
+							</div>
+						</div>
+						<div class="uk-width-1-4 uk-visible@s">
+							<h3 class="b-b">
+								<span>快捷链接</span>
+							</h3>
+							<ul class="uk-grid-collapse" uk-grid>
+							    								<li class="uk-width-1-3"><a href="/games/" target="_blank">手游下载</a></li>
+																<li class="uk-width-1-3"><a href="/app/" target="_blank">应用下载</a></li>
+																<li class="uk-width-1-3"><a href="/news/" target="_blank">手游攻略</a></li>
+																<li class="uk-width-1-3"><a href="/news/sypc/" target="_blank">手游评测</a></li>
+																<li class="uk-width-1-3"><a href="/images/" target="_blank">手游图库</a></li>
+																<li class="uk-width-1-3"><a href="/" target="_blank">手游专区</a></li>
+															</ul>
+						</div>
+						<div class="uk-width-1-1 uk-width-1-1@s uk-width-1-2@m uk-width-1-4@l uk-width-1-4@xl">
+							<h3 class="b-b">
+								<span>支持与服务</span>
+							</h3>
+							<ul class="uk-grid-collapse" uk-grid>
+							    								<li class="uk-width-1-3"><a href="/about/" target="_blank">关于我们</a></li>
+																<li class="uk-width-1-3"><a href="/copyright/" target="_blank">免责声明</a></li>
+																<li class="uk-width-1-3"><a href="/db/" target="_blank">商务洽谈</a></li>
+																<li class="uk-width-1-3"><a href="/link/" target="_blank">友情链接</a></li>
+																<li class="uk-width-1-3"><a href="/tags/" target="_blank">标签大全</a></li>
+																<li class="uk-width-1-3"><a href="/sitemap.xml" target="_blank">网站地图</a></li>
+															</ul>
+						</div>
+						<div class="uk-width-1-4 uk-visible@s">
+							<h3 class="b-b">
+								<span>关注手游猫</span>
+							</h3>
+						</div>
+					</div>
+										<div class="footCop uk-flex uk-margin-top uk-padding-small uk-background-muted">
+						<div class="uk-flex-1 uk-text-muted uk-text-left">
+							<span class="uk-margin-right">Copyright 2019-2020 <a href="https://www.symao.com" target="_blank">手游猫</a></span>
+							
+						</div>
+						<div class="uk-flex-1 uk-text-right uk-text-muted">
+														<span><a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备18001037号</a></span>
+													</div>
+					</div>
+				</div>
+				<script type='text/javascript' src='https://www.symao.com/wp-content/themes/mao/static/js/index.js?ver=5.5.3' id='index-js'></script>
+<script type='text/javascript' src='https://www.symao.com/wp-content/themes/mao/static/js/theia-sticky-sidebar.min.js?ver=5.5.3' id='sticky-js'></script>
+				<script>
+					var _hmt = _hmt || [];
+					(function() {
+					  var hm = document.createElement("script");
+					  hm.src = "https://hm.baidu.com/hm.js?f30d388ed5530a98fa6d9fd903dde92c";
+					  var s = document.getElementsByTagName("script")[0]; 
+					  s.parentNode.insertBefore(hm, s);
+					})();
+				</script>
+				<script>
+                    console.log("\n %c 手游猫 %c https://www.symao.com \n\n", "color: #fff; background: #ff6600; padding:5px 0;", "background: #fadfa3; padding:5px 0;");
+                    console.log("SQL 请求数：4");
+                    console.log("页面生成耗时： 0.04677");
+                </script>
+			</footer>
+		</div>
+	</body>
+</html>
